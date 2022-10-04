@@ -1,2 +1,0 @@
-# ThomasGronnier.github.io
-Portfolio
