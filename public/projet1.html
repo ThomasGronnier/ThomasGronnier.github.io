@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet - Génération de Factures</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+      background-color: #EAE4D5;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .subinfo {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a.back-link:hover {
+      color: #666;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: center;
+    }
+
+     @media screen and (max-width: 768px) {
+
+        .img img {
+            max-height: 300px;
+        }
+
+        .project-container {
+            margin: 40px 10px;
+            padding: 15px;
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <h1>Projet de Génération de Factures</h1>
+    <div class="subinfo">Stage de 10 semaines – Association Compucraft</div>
+
+    <p>
+      Le but de ce projet était de réaliser un site internet qui permettait de créer et générer une facture ou un devis en format PDF avec des données fournies par l'utilisateur. L'utilisateur devait pouvoir se connecter et s'inscrire sur le site. Le site comportait plusieurs pages, mais par exemple il y avait la page de coordonnées où l'utilisateur devait rentrer ses coordonnées et les modifier afin qu'elles soient utilisées pour générer la facture en PDF.
+    </p>
+
+    <p>
+      Dans la réalisation de ce site je me suis principalement occupé de la partie backend, que j'ai réalisée en utilisant Python avec le framework Flask, et j'ai utilisé PostgreSQL pour la base de données. Ce projet a été très formateur pour moi puisque j'ai appris à utiliser Python Flask pendant que je le réalisais et qu'il m'a permis d'utiliser GitHub pendant le projet.
+    </p>
+
+    <div class="img">
+        <img src="../assets/CP1.png" height="400" alt="image page d'accueil projet Compucraft"/>
+    </div>
+
+    <div class="txt">
+        <p>Image de la page d'accueil</p>
+    </div>
+
+    <div class="img img1">
+        <img src="../assets/CP2.png" height="400" alt="Image de la page statistique"/>
+    </div>
+
+    <div class="txt">
+        <p>Image de la page statistique</p>
+    </div>
+        
+    <div class="img">
+        <img src="../assets/CP3.png" height="600" alt="Image d'une facture géneré via le site"/>
+    </div>
+
+    <div class="txt">
+        <p>Image d'une facture géneré via le site</p>
+    </div>
+    
+    <a href="../index.html#project-experience" class="back-link">← Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>

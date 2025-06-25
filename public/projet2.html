@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet - Bot TikTok Best-of LoL</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+      background-color: #EAE4D5;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .subinfo {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a.back-link:hover {
+      color: #666;
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .txt {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .img img, .img iframe {
+        max-height: 300px;
+        width: auto;
+      }
+
+      .project-container {
+        margin: 40px 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <h1>Projet – Bot TikTok Best-of League of Legends</h1>
+    <div class="subinfo">Création automatique de vidéos best-of à partir de clips Twitch</div>
+
+    <p>
+      Ce projet personnel vise à automatiser la création de vidéos TikTok à partir de clips Twitch populaires dans la catégorie <em>League of Legends</em>. Le script interroge l’API Twitch pour récupérer les 5 clips les plus vus des dernières 24 heures, en français et en anglais.
+    </p>
+
+    <p>
+      Après téléchargement, les clips sont traités pour uniformiser leur format, résolution et fréquence d’images. Cette normalisation garantit une lecture fluide et évite les erreurs lors de l’assemblage. Ensuite, les vidéos sont redimensionnées en format vertical (9:16), adapté à TikTok.
+    </p>
+
+    <p>
+      Enfin, les clips normalisés sont concaténés dans l’ordre de popularité grâce à <code>ffmpeg</code>, ce qui produit une vidéo homogène prête à être publiée sur TikTok.
+    </p>
+
+    <p>
+      Le bot est développé en Node.js avec les bibliothèques <code>axios</code> pour les appels API et <code>fluent-ffmpeg</code> pour le traitement vidéo. Il fonctionne entièrement en ligne de commande, sans interface graphique.
+    </p>
+
+    <div class="img">
+      <img src="../assets/TK1.png" height="400" alt="Terminal exécutant le script" />
+    </div>
+
+    <div class="txt">
+      <p>Aperçu du terminal pendant l'éxecution du script</p>
+    </div>
+
+    <div class="img">
+      <iframe 
+        src="https://www.tiktok.com/embed/v2/7518379660640521494" 
+        height="600" 
+        width="325" 
+        style="border:none;" 
+        allowfullscreen 
+        allow="encrypted-media"
+      ></iframe>
+    </div>
+
+    <div class="txt">
+      <p>Exemple de vidéo publiée sur TikTok</p>
+    </div>
+
+    <div class="txt">
+      <p>
+        👉 Voir les vidéos publiées : 
+        <a href="https://www.tiktok.com/@daily_best_of_lol" target="_blank" style="color: #000; font-weight: bold; text-decoration: underline;">
+          @daily_best_of_lol sur TikTok
+        </a>
+      </p>
+    </div>
+
+    <a href="../index.html#project-experience" class="back-link">← Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>

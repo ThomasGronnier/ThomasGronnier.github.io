@@ -1,0 +1,361 @@
+.gradient-background {
+  background: linear-gradient(300deg, #b59f89, #e0c7a5, #7c6a55);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.head {
+    height: 600px;
+    display: flex;             
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center; 
+    
+}
+
+.separator {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  margin: 40px auto;
+  width: 80%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #EAE4D5;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #B6B09F;
+}
+
+
+h1 {
+    font-size: 64px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+
+.img-hero {
+
+    display: flex;              
+    justify-content: center;   
+    align-items: center; 
+}
+
+.hero-pic {
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.txt-hero{
+    display: flex;              
+    justify-content: center;
+    flex-direction: column;    
+    align-items: center; 
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin-top: 20px;
+}
+
+#resume,#Contact {
+    background-color: #D9D1C7;
+}
+.resume{
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+
+.skill-img img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;  /* Permet de garder l'image centrée sans déformation */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-text {
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.skill-text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.scd-block, .trd-block{
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    margin: 12px;
+    border-radius: 20px;
+    width: fit-content;
+    color: white;
+}
+
+.tag.perso {
+    background-color: #3498db;
+}
+
+.tag.pro {
+    background-color: #2ecc71;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.card-text {
+    padding: 0 16px 16px 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px 16px 16px;
+}
+
+.card-btn {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #2980b9;
+}
+
+.contact-container {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 20px;
+    color: #000000;
+}
+
+.contact-container a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+}
+
+.footer-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Rendre l'ensemble du contenu centré */
+    body, #header, #hero, .resume-title, h4, p {
+        text-align: center;
+    }
+
+    .skill-block {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .skill-img img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .skill-block:nth-child(even) .skill-text {
+        order: 1;
+    }
+
+    .skill-block:nth-child(even) .skill-img {
+        order: 2;
+    }
+
+    .skill-block {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .separator {
+        width: 90%;
+    }
+
+     h1 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+

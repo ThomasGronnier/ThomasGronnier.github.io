@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Gronnier</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section id="navbar">
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="#header">Présentation</a></li>
+                <li><a href="#resume">Compétences</a></li>
+                <li><a href="#project-experience">Réalisations</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="gradient-background" id="header">
+        <div class="head">
+            <h1>Je suis Thomas</h1>
+            <h2>Un programmeur.</h2>
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="img-hero">
+            <img class="hero-pic" src="./assets/moi1.png" alt="picture of me" />
+        </div>
+        <div class="txt-hero">
+            <h3>Bonjour</h3>
+            <p>Je m'appelle Thomas Gronnier et je suis développeur et passioné d'informatique.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <hr class="separator">
+        <div class="title">
+            <h3>Mes compétences</h3>
+        </div>
+
+        <div class="skill-block">
+            <div class="skill-img">
+                <img src="https://img.freepik.com/free-photo/close-up-man-writing-code-laptop_158595-5166.jpg"
+                    alt="Développement web" />
+            </div>
+            <div class="skill-text">
+                <h4>Développement web</h4>
+                <p>Je maîtrise le développement front-end avec des langages tels que HTML, CSS et JavaScript, tout en étant également capable de gérer le back-end grâce à des technologies comme PHP, Python avec le framework Flask, ainsi que JavaScript avec Node.js.</p>
+            </div>
+        </div>
+
+        <div class="skill-block scd-block">
+            <div class="skill-text">
+                <h4>Réseaux & Systèmes</h4>
+                <p>Je possède des compétences dans le réseau et l'administration système que j'ai apprises lors de mon cursus scolaire ou en apprenant sur internet. Je maîtrise Windows et Linux pour la partie système et pour la partie réseaux je sais configurer un serveur DHCP ou DNS et je sais configurer un VLAN, par exemple.</p>
+            </div>
+            <div class="skill-img">
+                <img src="./assets/serveur.jpg" alt="Administration système" />
+            </div>
+        </div>
+
+        <div class="skill-block trd-block">
+            <div class="skill-img">
+                <img src="./assets/database.jpg" alt="Administration système" />
+            </div>
+
+            <div class="skill-text">
+                <h4>Base de données</h4>
+                <p>Je sais créer et manipuler des bases de données, mais aussi réalisé des schémas conceptuels de base
+                    de données. Je maitrise évidemment le SQL que j'utilise souvent pour réaliser mes projets avec des
+                    SGBD comme PhpMyAdmin ou Postgres.</p>
+            </div>
+
+        </div>
+        <hr class="separator">
+    </section>
+
+    <section id="project-experience">
+        <div class="title">
+            <h3>Mes anciennes réalisations</h3>
+        </div>
+
+        <div class="card-container">
+            <div class="project-card">
+                <img src="./assets/invoice.jpg" alt="Projet 1">
+                <span class="tag pro">Expérience professionnelle</span>
+                <h3 class="card-title">Projet Compucraft (Stage)</h3>
+                <div class="card-text">
+                    <p>Le projet consistait à développer un site web permettant à un utilisateur de s’inscrire, se connecter et générer des factures ou devis en PDF à partir de ses données. Il pouvait renseigner et modifier ses coordonnées via une page dédiée, celles-ci étant ensuite utilisées pour la génération du document. Dans ce projet, j’étais surtout sur la partie backend, où j’ai utilisé du Python avec le framework Flask.</p>
+                </div>
+
+                <div class="card-footer">
+                    <a href="./public/projet1.html" class="card-btn">Voir plus</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/tiktok.webp" alt="Projet 2">
+                <span class="tag perso">Projet personnel</span>
+                <h3 class="card-title">Bot de création de best of</h3>
+                <div class="card-text">
+                    <p>Le projet consiste à développer un script Node.js automatisé qui récupère chaque jour les 5 clips les plus populaires de la catégorie League of Legends sur Twitch, en français et en anglais. Les clips sont téléchargés puis assemblés dans l’ordre de popularité pour former une seule vidéo au format vertical, adaptée à la publication sur TikTok. Le projet utilise l’API Twitch, ffmpeg pour le montage, et fonctionne sans interface graphique.</p>
+                </div>
+
+                <div class="card-footer">
+                    <a href="./public/projet2.html" class="card-btn">Voir plus</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/anime.jpg" alt="Expérience pro">
+                <span class="tag perso">Projet personnel</span>
+                <h3 class="card-title">Generateur de PP anime</h3>
+                <div class="card-text">
+                    <p>Le projet est une application web en Node.js qui, via une interface simple, permet de générer en un clic une image de profil de style anime. Il utilise plusieurs APIs spécialisées, sélectionnées aléatoirement à chaque demande avec un système de secours en cas d’erreur. Ce fonctionnement garantit une grande variété d’images. L’image est ensuite affichée directement à l’écran, prête à être utilisée.</p>
+                </div>
+
+                <div class="card-footer">
+                    <a href="./public/projet3.html" class="card-btn">Voir plus</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="Contact">
+        <hr class="separator">
+        <div class="title">
+            <h3>Me contacter</h3>
+        </div>
+
+        <div class="contact-container">
+            <p>Pour toute question, opportunité ou collaboration, n'hésitez pas à me contacter !</p>
+            <p>📧 <strong>Email :</strong> <a href="mailto:thomasgronnier123@gmail.com">thomasgronnier123@gmail.com</a>
+            </p>
+            <p>📱 <strong>Téléphone :</strong> 07 89 23 14 32</p>
+
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer gradient-background">
+        <div class="footer-content">
+            <a href="https://github.com/ThomasGronnier" target="_blank" class="footer-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 24 24">
+                    <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.85 10.96.57.1.78-.25.78-.55 0-.27-.01-1.17-.01-2.13-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.3-.51-1.51.11-3.15 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.88-.39c.98.01 1.97.13 2.88.39 2.19-1.49 3.15-1.18 3.15-1.18.62 1.64.23 2.85.11 3.15.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.67.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.21.65.79.54A10.52 10.52 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5Z" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/thomas-gronnier-0386361b9/" target="_blank" class="footer-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0A66C2" viewBox="0 0 24 24">
+                    <path
+                        d="M20.45 20.45h-3.55v-5.3c0-1.26-.02-2.88-1.75-2.88-1.76 0-2.03 1.38-2.03 2.79v5.39h-3.55V9h3.41v1.56h.05c.48-.91 1.67-1.87 3.44-1.87 3.68 0 4.36 2.42 4.36 5.56v6.2zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .8 0 1.78v20.44C0 23.2.8 24 1.78 24h20.44c.98 0 1.78-.8 1.78-1.78V1.78C24 .8 23.2 0 22.22 0z" />
+                </svg>
+            </a>
+
+            <span class="footer-name">@Thomas Gronnier</span>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
